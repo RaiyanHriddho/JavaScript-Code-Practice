@@ -1,0 +1,1115 @@
+CODE-01
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+</body>
+</html>
+
+CODE-02
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html>
+
+CODE-03
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+
+</body>
+</html> 
+
+CODE-04
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can show hidden HTML elements.</p>
+
+<p id="demo" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+
+</body>
+</html> 
+
+CODE-05
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript in Body</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "My First JavaScript";
+</script>
+
+</body>
+</html> 
+
+CODE-06
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+</head>
+<body>
+
+<h2>Demo JavaScript in Head</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+</body>
+</html> 
+
+CODE-07
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Demo JavaScript in Body</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+
+</body>
+</html> 
+
+CODE-08
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Demo External JavaScript</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<p>This example links to "myScript.js".</p>
+<p>(myFunction is stored in "myScript.js")</p>
+
+<script src="myScript.js"></script>
+
+</body>
+</html>
+
+CODE-09
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>External JavaScript</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Click Me</button>
+
+<p>This example uses a full web URL to link to "myScript.js".</p>
+<p>(myFunction is stored in "myScript.js")</p>
+
+<script src="https://www.w3schools.com/js/myScript.js"></script>
+
+</body>
+</html>
+
+CODE-10
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Demo External JavaScript</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<p>This example links to "myScript.js".</p>
+<p>(myFunction is stored in "myScript.js")</p>
+
+<script src="myScript.js"></script>
+
+</body>
+</html>
+
+CODE-11
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Web Page</h2>
+<p>My First Paragraph.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+
+</body>
+</html> 
+
+CODE-12
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+
+<p>Never call document.write after the document has finished loading.
+It will overwrite the whole document.</p>
+
+<script>
+document.write(5 + 6);
+</script>
+
+</body>
+</html> 
+
+CODE-13
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+</body>
+</html> 
+
+CODE-14
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+
+<script>
+window.alert(5 + 6);
+</script>
+
+</body>
+</html> 
+
+CODE-15
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Activate Debugging</h2>
+
+<p>F12 on your keyboard will activate debugging.</p>
+<p>Then select "Console" in the debugger menu.</p>
+<p>Then click Run again.</p>
+
+<script>
+console.log(5 + 6);
+</script>
+
+</body>
+</html> 
+
+CODE-16
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The window.print() Method</h2>
+
+<p>Click the button to print the current page.</p>
+
+<button onclick="window.print()">Print this page</button>
+
+</body>
+</html>
+
+CODE-17
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Statements</h2>
+
+<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+<p id="demo"></p>
+
+<script>
+let x, y, z;  // Statement 1
+x = 5;        // Statement 2
+y = 6;        // Statement 3
+z = x + y;    // Statement 4
+
+document.getElementById("demo").innerHTML =
+"The value of z is " + z + ".";  
+</script>
+
+</body>
+</html>
+
+CODE-18
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Statements</h2>
+
+<p>In HTML, JavaScript statements are executed by the browser.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello Dolly.";
+</script>
+
+</body>
+</html>
+
+CODE-19
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Statements</h2>
+
+<p>JavaScript statements are separated by semicolons.</p>
+
+<p id="demo1"></p>
+
+<script>
+let a, b, c;
+a = 5;
+b = 6;
+c = a + b;
+document.getElementById("demo1").innerHTML = c;
+</script>
+
+</body>
+</html>
+
+CODE-20
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Statements</h2>
+
+<p>
+The best place to break a code line is after an operator or a comma.
+</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"Hello Dolly!";
+</script>
+
+</body>
+</html>
+
+CODE-21
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<html>
+<body>
+<script>  
+var emp=["Sonoo","Vimal","Ratan"];  
+for (i=0;i<emp.length;i++){  
+document.write(emp[i] + "<br/>");  
+}  
+</script>  
+</body>
+</html>
+
+CODE-22
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<html>
+<body>
+<script>  
+var i;  
+var emp = new Array();  
+emp[0] = "Arun";  
+emp[1] = "Varun";  
+emp[2] = "John";  
+  
+for (i=0;i<emp.length;i++){  
+document.write(emp[i] + "<br>");  
+}  
+</script>  
+</body>
+</html>
+
+CODE-23
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<html>
+<body>
+<script>  
+var emp=new Array("Jai","Vijay","Smith");  
+for (i=0;i<emp.length;i++){  
+document.write(emp[i] + "<br>");  
+}  
+</script>  
+</body>
+</html>
+
+CODE-24
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>  
+var str="This is string literal";  
+document.write(str);  
+</script>
+</body>
+</html>
+
+CODE-25
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>  
+var stringname=new String("hello javascript string");  
+document.write(stringname);  
+</script> 
+</body>
+</html>
+
+CODE-26
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>  
+var str="javascript";  
+document.write(str.charAt(2));  
+</script>  
+</body>
+</html>
+
+CODE-27
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>  
+var s1="javascript from javatpoint indexof";  
+var n=s1.indexOf("from");  
+document.write(n);  
+</script>  
+</body>
+</html>
+
+CODE-28
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>  
+var s1="JavaScript toLowerCase Example";  
+var s2=s1.toLowerCase();  
+document.write(s2);  
+</script>  
+</body>
+</html>
+
+CODE-29
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>  
+var s1="JavaScript toUpperCase Example";  
+var s2=s1.toUpperCase();  
+document.write(s2);  
+</script>  
+</body>
+</html>
+
+
+CODE-30
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>  
+var s1="abcdefgh";  
+var s2=s1.slice(2,5);  
+document.write(s2);  
+</script>  
+</body>
+</html>
+
+CODE-31
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+let y = "hi";
+let Y = 5;
+
+console.log(y); // hi
+console.log(Y); // 5
+
+CODE-32
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+const x = 5;
+x = 10;  // Error! constant cannot be changed.
+console.log(x)
+
+CODE-33
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+const x;  // Error! Missing initializer in const declaration.
+x = 5;
+console.log(x)
+
+CODE-34
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+const a = 5, b = 2, c = 'hello';
+
+// equal to operator
+console.log(a == 5);     // true
+console.log(b == '2');   // true
+console.log(c == 'Hello');  // false
+
+CODE-35
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+const a = 3, b = 'hello';
+
+// not equal operator
+console.log(a != 2); // true
+console.log(b != 'Hello'); // true
+
+CODE-36
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+const a = 2, b = 'hello';
+
+// strict not equal operator
+console.log(a !== 2); // false
+console.log(a !== '2'); // true
+console.log(b !== 'Hello'); // true
+
+CODE-37
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+const a = 3;
+
+// greater than operator
+console.log(a > 2); // true
+
+CODE-38
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+const a = 3, b = 2;
+
+// less than operator
+console.log(a < 2); // false
+console.log(b < 3); // true
+
+CODE-39
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+const a = 2;
+
+// less than or equal operator
+console.log(a <= 3) // true
+console.log(a <= 2); // true
+
+CODE-40
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+const a = true, b = false;
+const c = 4;
+
+// logical AND
+console.log(a && a); // true
+console.log(a && b);  // false
+
+console.log((c > 2) && (c < 2)); // false
+
+CODE-41
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+const a = true, b = false, c = 4;
+
+
+// logical OR
+console.log(a || b); // true
+console.log(b || b); // false
+console.log((c>2) || (c<2)); // true
+
+CODE-42
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Variables</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create and display a variable:
+let car = "Fiat";
+document.getElementById("demo").innerHTML = car;
+</script>
+
+</body>
+</html>
+
+CODE-43
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+// Display some data from the object:
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+</body>
+</html>
+
+CODE-44
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p>There are two different ways to access an object property.</p>
+
+<p>You can use person.property or person["property"].</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     :  5566
+};
+
+// Display some data from the object:
+document.getElementById("demo").innerHTML =
+person.firstName + " " + person.lastName;
+</script>
+
+</body>
+</html>
+
+CODE-45
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p>There are two different ways to access an object property.</p>
+
+<p>You can use person.property or person["property"].</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     :  5566
+};
+
+// Display some data from the object:
+document.getElementById("demo").innerHTML =
+person["firstName"] + " " + person["lastName"];
+</script>
+
+</body>
+</html>
+
+CODE-46
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+
+<p id="demo"></p>
+
+<script>
+let text = "John Doe";  // String written inside quotes
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+CODE-47
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string.</p>
+
+<p id="demo"></p>
+
+<script>
+let answer1 = "It's alright";
+let answer2 = "He is called 'Johnny'";
+let answer3 = 'He is called "Johnny"'; 
+
+document.getElementById("demo").innerHTML =
+answer1 + "<br>" + answer2 + "<br>" + answer3; 
+</script>
+
+</body>
+</html>
+
+CODE-48
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The length Property</h2>
+
+<p>The length of the string is:</p>
+<p id="demo"></p>
+
+<script>
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo").innerHTML = text.length;
+</script>
+
+</body>
+</html>
+
+CODE-49
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+
+<p>The escape sequence \' inserts a single quote in a string.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = 'It\'s alright.';
+document.getElementById("demo").innerHTML = text; 
+</script>
+
+</body>
+</html>
+
+CODE-50
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<html>
+<body>
+Current Date and Time: <span id="txt"></span>  
+<script>  
+var today=new Date();  
+document.getElementById('txt').innerHTML=today;  
+</script>  
+</body>
+</html>
+
+CODE-51
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<html>
+<body>
+Current Time: <span id="txt"></span>
+<script>
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+</script>
+</body>
+</html>
+
+CODE-52
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+// check if the number is positive
+
+const number = prompt("Enter a number: ");
+
+// check if number is greater than 0
+if (number > 0) {
+ // the body of the if statement
+  console.log("The number is positive");
+}
+
+console.log("The if statement is easy");
+
+CODE-53
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+// check if the number is positive or negative/zero
+
+const number = prompt("Enter a number: ");
+
+// check if number is greater than 0
+if (number > 0) {
+  console.log("The number is positive");
+}
+// if number is not greater than 0
+else {
+  console.log("The number is either a negative number or 0");
+}
+
+console.log("The if...else statement is easy");
+
+CODE-54
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+// check if the number if positive, negative or zero
+const number = prompt("Enter a number: ");
+
+
+// check if number is greater than 0
+if (number > 0) {
+    console.log("The number is positive");
+}
+// check if number is 0
+else if (number == 0) {
+  console.log("The number is 0");
+}
+// if number is neither greater than 0, nor zero
+else {
+    console.log("The number is negative");
+}
+
+console.log("The if...else if...else statement is easy");
+
+CODE-55
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+// check if the number is positive, negative or zero
+const number = prompt("Enter a number: ");
+
+if (number >= 0) {
+    if (number == 0) {
+        console.log("You entered number 0");
+    } else {
+        console.log("You entered a positive number");
+    }
+} else {
+    console.log("You entered a negative number");
+}
+
+CODE-56
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+const number = 2;
+if (number > 0)
+    console.log("The number is positive.");
+ else 
+   console.log("The number is negative or zero.");
+
+CODE-57
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Statements</h2>
+
+<p>
+The best place to break a code line is after an operator or a comma.
+</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"Hello Dolly!";
+</script>
+
+</body>
+</html>
+
+
+CODE-58
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+
+<p>The safest way to break a code line in a string is using string addition.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello " +
+"Dolly!";
+</script>
+
+</body>
+</html>
+
+CODE-59
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript switch</h2>
+
+<p id="demo"></p>
+
+<script>
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+</script>
+
+</body>
+</html>
+
+CODE-60
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Loops</h2>
+
+<p>A loop with a <b>break</b> statement.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "";
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { break; }
+  text += "The number is " + i + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+
+
